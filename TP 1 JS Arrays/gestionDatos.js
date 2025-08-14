@@ -41,7 +41,7 @@ console.log("Producto eliminado del inicio:", eliminado.nombre);
 //5
 const ProductosConStock = productos.filter(p=> p.stock > 0);
 console.log("\n--- Productos con stock disponible: ---\n"); 
-console.log(ProductosConStock);
+console.table(ProductosConStock);
 
 //6
 const nombresProductos = productos.map(p => p.nombre);
@@ -60,7 +60,7 @@ if (productoEncontrado) {
 // 8
 const productosOrdenados = [...productos].sort((a, b) => b.precio - a.precio);
 console.log("\nProductos ordenados por precio (descendente):");
-console.log(productosOrdenados);
+console.table(productosOrdenados);
 
 
 //CRUD
