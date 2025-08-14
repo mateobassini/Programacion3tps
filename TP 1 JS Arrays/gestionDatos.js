@@ -7,8 +7,10 @@ let productos = [
 ]
 
 console.log("cantidad total de productos:", productos.length);
-console.log("Nombre del segundo producto:", productos[1].nombre);
-console.log("Nombre del cuarto producto:", productos[3].nombre);
+console.log(
+  "Nombre del segundo producto:", productos[1].nombre,
+  "| Nombre del cuarto producto:", productos[3].nombre
+);
 
 for (const producto of productos) {
     console.log(`Nombre: ${producto.nombre}, Precio: $${producto.precio}`);
@@ -22,7 +24,7 @@ productos.forEach(producto => {
 console.log("\n--- Manipulación de Arrays ---\n");
 productos.push({id: 7, nombre: "Crónica de una muerte anunciada", precio: 23000, stock: 3});
 productos.push({id: 8, nombre: "La casa de los espíritus", precio: 29000, stock: 2});
-console.log("Lista actualizda():", productos.map(p => p.nombre));
+console.log("Lista actualizada:", productos.map(p => p.nombre));
 
 //2
 const productoEliminado = productos.pop();
