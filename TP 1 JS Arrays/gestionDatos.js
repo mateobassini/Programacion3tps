@@ -13,7 +13,7 @@ console.log(
 );
 
 for (const producto of productos) {
-    console.log(`Nombre: ${producto.nombre}, Precio: $${producto.precio}`);
+    console.log(`${producto.nombre}, ${producto.precio}`);
 }
 
 productos.forEach(producto => {
